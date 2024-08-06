@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29ab18db-be88-4578-8c05-01a98d4f1297" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="29ab18db-be88-4578-8c05-01a98d4f1297" name="Changes" comment="primeiro commit da tarefa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +25,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/home/altenir/Documentos/orientacaoObjeto/aula1/lista_duplamente_encadeada/src/main/java/org/example/Main.java"
@@ -41,7 +40,31 @@
       <option name="presentableId" value="Default" />
       <updated>1722909533793</updated>
     </task>
+    <task id="LOCAL-00001" summary="primeiro commit da tarefa">
+      <option name="closed" value="true" />
+      <created>1722909591235</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722909591235</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primeiro commit da tarefa" />
+    <option name="LAST_COMMIT_MESSAGE" value="primeiro commit da tarefa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

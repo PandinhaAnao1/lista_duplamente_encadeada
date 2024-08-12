@@ -97,9 +97,11 @@ public class ListaDuplamenteEncadeada {
                 }
 
             }
+            Elemento elementoAnterior  = elemento.anterior;
+            Elemento elementoProximo = elemento.proximo;
+            elementoAnterior.proximo = elementoProximo;
+            elementoProximo.anterior = elementoAnterior;
         }
-        Elemento elementoAnterior  = elemento.anterior;
-        Elemento elementoProximo = elemento.proximo;
         
         return elemento;
     }

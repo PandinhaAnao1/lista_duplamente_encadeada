@@ -74,7 +74,11 @@ public class ListaDuplamenteEncadeada {
         novo.anterior.proximo = novo;
         novo.proximo.anterior = novo; 
     }
+    public void removeFirst(){
+        inicio = inicio.proximo;
+        inicio.anterior = null;
 
+    }
     public void removeLast(){
         if(size() == 1){
             clear();
@@ -83,7 +87,43 @@ public class ListaDuplamenteEncadeada {
             fim.proximo = null;
         }
     }
+    public void remove(int index){
+        Elemento elemento = null;
+        if(size() > 0){
+            elemento = inicio;
+            if(tamanho > index){
+                for(int i = 0; i <= index; i++){
+                    elemento = elemento.proximo;
+                }
 
+            }
+        }
+        Elemento elementoAnterior  = elemento.anterior;
+        Elemento elementoProximo = elemento.proximo;
+        
+        return elemento;
+    }
+
+    public void getFirst(){
+        return inicio;
+
+    }
+    public void getLast(){
+        return fim;
+    }
+    public void get(int index){
+       Elemento elemento = null;
+        if(size() > 0){
+            elemento = inicio;
+            if(tamanho > index){
+                for(int i = 0; i <= index; i++){
+                    elemento = elemento.proximo;
+                }
+
+            }
+        }
+        return elemento;
+    }   
     // utilitarios
     // tamanho, limpar, e tamanho mais 1
     public void addTamanho(){

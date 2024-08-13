@@ -53,28 +53,29 @@ public class ListaDuplamenteEncadeada {
             return;
         
         }else if(index > size() || index < 0){
-            System.out.println("Error: index invalido. Ocorreu um erro ao incerir o valor "+valor+" na posição "+index);
+            System.out.println("Error: index invalido. Ocorreu um erro ao inserir o valor "+valor+" na posição "+index);
 
             return;
         }else if(index >= (size() / 2)){
             atual = fim;
             for(int i = size(); i != index; i--){
-                atual = fim.anterior;
+                atual = atual.anterior;
             }
 
         }else if(index < (size() / 2)){
             atual = inicio;
             for(int i = 0; i != index; i++){
-                atual = fim.proximo;
+                atual = atual.proximo;
             }
         }
 
         novo.proximo = atual;
         novo.anterior = atual.anterior;
         novo.anterior.proximo = novo;
-        novo.proximo.anterior = novo; 
+        novo.proximo.anterior = novo;
     }
     public void removeFirst(){
+        // copiar lógica de baixo
         inicio = inicio.proximo;
         inicio.anterior = null;
 
@@ -87,15 +88,15 @@ public class ListaDuplamenteEncadeada {
             fim.proximo = null;
         }
     }
-    public void remove(int index){
+    public Elemento remove(int index){
         Elemento elemento = null;
         if(size() > 0){
             elemento = inicio;
+            // tratar situação indice maior que lista, deveria retornar nulo.
             if(tamanho > index){
-                for(int i = 0; i <= index; i++){
+                for(int i = 0; i < index; i++){
                     elemento = elemento.proximo;
                 }
-
             }
             Elemento elementoAnterior  = elemento.anterior;
             Elemento elementoProximo = elemento.proximo;
@@ -106,14 +107,13 @@ public class ListaDuplamenteEncadeada {
         return elemento;
     }
 
-    public void getFirst(){
-        return inicio;
-
+    public int getFirst(){
+        return inicio.valor;
     }
-    public void getLast(){
-        return fim;
+    public int getLast(){
+        return fim.valor;
     }
-    public void get(int index){
+    public int get(int index){
        Elemento elemento = null;
         if(size() > 0){
             elemento = inicio;
@@ -121,14 +121,13 @@ public class ListaDuplamenteEncadeada {
                 for(int i = 0; i <= index; i++){
                     elemento = elemento.proximo;
                 }
-
             }
         }
-        return elemento;
+        return elemento.valor;
     }   
     // utilitarios
     // tamanho, limpar, e tamanho mais 1
-    public void addTamanho(){
+    private void addTamanho(){
         tamanho++;
     }
 
@@ -143,12 +142,27 @@ public class ListaDuplamenteEncadeada {
 
     public static void main(String[] args) {
         ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
+        System.out.println("Lista no formato inicial");
+        System.out.println("Elemento valor início: " + lista.inicio);
+        System.out.println("Elemento valor fim: " + lista.fim);
+        System.out.println("Tamanho da lista: " + lista.tamanho);
+        System.out.println("------------------------");
         lista.addFirst(10);
-        lista.addFirst(15);
-        lista.addLast(12);
-        lista.add(10, -1);
+        lista.addLast(11);
+        lista.add(12, 1);
+        System.out.println("Lista com elementos adicionados");
+        System.out.println("Elemento valor início: " + lista.inicio);
+        System.out.println("Elemento valor fim: " + lista.fim);
+        System.out.println("Tamanho da lista: " + lista.tamanho);
+        System.out.println("-------------------------------");
+        lista.removeFirst();
         lista.removeLast();
-        System.out.println(lista.fim.valor);
+        lista.remove(0);
+        System.out.println("Lista com elementos removidos");
+        System.out.println("Elemento valor início: " + lista.inicio);
+        System.out.println("Elemento valor fim: " + lista.fim);
+        System.out.println("Tamanho da lista: " + lista.tamanho);
+        System.out.println("-------------------------------");
 
     }
 }

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29ab18db-be88-4578-8c05-01a98d4f1297" name="Changes" comment="primeiro commit da tarefa">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Elemento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ListaDuplamenteEncadeada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ListaDuplamenteEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ListaDuplamenteEncadeada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +31,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2kGUhvvrmfE059uQUDPJzuS7Iwb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,10 +42,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ListaDuplamenteEncadeada.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/guilherme_krause/Desktop/estrutura_de_dados/lista_duplamente_encadeada",
     "onboarding.tips.debug.path": "/home/altenir/Documentos/orientacaoObjeto/aula1/lista_duplamente_encadeada/src/main/java/org/example/Main.java"
   }
 }]]></component>

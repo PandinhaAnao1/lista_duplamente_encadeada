@@ -45,9 +45,10 @@
     "Application.ListaDuplamenteEncadeada.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/guilherme_krause/Desktop/estrutura_de_dados/lista_duplamente_encadeada",
+    "last_opened_file_path": "/Users/guilherme/dev/ifro/lista_duplamente_encadeada",
     "onboarding.tips.debug.path": "/home/altenir/Documentos/orientacaoObjeto/aula1/lista_duplamente_encadeada/src/main/java/org/example/Main.java"
   }
 }]]></component>

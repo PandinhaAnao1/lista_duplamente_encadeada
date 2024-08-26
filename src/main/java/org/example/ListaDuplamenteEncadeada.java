@@ -122,6 +122,7 @@ public class ListaDuplamenteEncadeada {
             Elemento elementoProximo = elemento.proximo;
             elementoAnterior.proximo = elementoProximo;
             elementoProximo.anterior = elementoAnterior;
+            removeTamanho();
         }
     }
 
@@ -176,6 +177,8 @@ public class ListaDuplamenteEncadeada {
         lista.addFirst(10);
         lista.addLast(11);
         lista.add(12, 1);
+        System.out.println(lista.get(1));
+        lista.remove(1);
         lista.print();
 //        System.out.println("Lista com elementos adicionados");
 //        System.out.println("Elemento valor no índice 0: " + lista.get(0));

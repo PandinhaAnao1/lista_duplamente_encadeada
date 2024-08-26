@@ -81,27 +81,36 @@ public class ListaDuplamenteEncadeada {
         addTamanho();
     }
 
-    public void removeFirst() {
+    public int removeFirst() {
         if (size() == 1) {
+            int primeiro = inicio.valor
             clear();
+            return primeiro;
         } else {
+            int primeiro = inicio.valor
             inicio = inicio.proximo;
             inicio.anterior = null;
             removeTamanho();
+            return primeiro;
         }
     }
 
-    public void removeLast() {
+    public int removeLast() {
+        
         if (size() == 1) {
+            int ultimo = inicio.valor;
             clear();
+            return ultimo;
         } else {
+            int ultimo = fim.valor;
             fim = fim.anterior;
             fim.proximo = null;
             removeTamanho();
+            return ultimo;
         }
     }
 
-    public void remove(int index) {
+    public int remove(int index) {
         if (size() > 0) {
             Elemento elemento = inicio;
             if (index == 0) {

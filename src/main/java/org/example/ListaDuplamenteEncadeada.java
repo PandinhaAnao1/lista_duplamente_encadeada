@@ -114,12 +114,12 @@ public class ListaDuplamenteEncadeada {
         if (size() > 0) {
             Elemento elemento = inicio;
             if (index == 0) {
-                removeFirst();
-                return;
+                int item = removeFirst();
+                return item;
             }
             if (index == size() - 1) {
-                removeLast();
-                return;
+                int elemento = removeLast();
+                return item;
             }
             // tratar situação indice maior que lista, deveria retornar nulo.
             if (index >= 0 && index < size()) {
@@ -132,6 +132,7 @@ public class ListaDuplamenteEncadeada {
             elementoAnterior.proximo = elementoProximo;
             elementoProximo.anterior = elementoAnterior;
             removeTamanho();
+            return elemento.valor;
         }
     }
 
